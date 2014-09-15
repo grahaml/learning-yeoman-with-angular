@@ -11,7 +11,8 @@ angular.module('mytodoApp')
     .controller('MainCtrl', function ($scope) {
 
         // Initial list of TODOs
-        $scope.todos = [ 'Item 1', 'Item 2', 'Item 3', 'Item 4' ];
+        // Will be populated via localStorage
+        $scope.todos = [];
 
         // Adding a new TODO
         // The `newTodo` argument is the content of the input field
