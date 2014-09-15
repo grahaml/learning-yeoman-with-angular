@@ -77,3 +77,9 @@ body {
     border-bottom: 0;
   }
 }
+
+/* Minimal styles for the todo items */
+.list-todos-item {
+  padding: 5px;
+  cursor: move;
+}
