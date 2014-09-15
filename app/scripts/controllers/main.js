@@ -28,4 +28,14 @@ angular.module('mytodoApp')
             this.newTodo = '';
         };
 
+        // Removing a TODO
+        // The index argument comes from the array used for ng-repeat
+        // on the TODO list. The item you clicked on knows what number
+        // it is in the grand scheme of things because of angular magic
+        $scope.removeTodo = function( index ) {
+
+            // Remove the TODO
+            $scope.todos.splice( index, 1 );
+        };
+
     });
